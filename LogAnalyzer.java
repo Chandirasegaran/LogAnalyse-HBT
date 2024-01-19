@@ -8,6 +8,8 @@ import java.util.Scanner;
 class LogAnalyze {
     void LogParse(List<String> logs) {
         System.out.println("Log Parse:");
+        System.out.println("-----------------------------------------------------------");
+
         for (String log : logs) {
             String[] parts = log.split(" ");
             if (parts.length > 3) {
@@ -26,6 +28,8 @@ class LogAnalyze {
     void countOccurence(List<String> logs) {
 
         System.out.println("Count the occurrence of unique error messages in the log: ");
+        System.out.println("----------------------------------------------------------");
+
         List<String> errMsg = new ArrayList<>();
         for (String log : logs) {
             String[] parts = log.split(" ");
@@ -147,11 +151,12 @@ class LogAnalyzer {
         }
 
         LogAnalyze object = new LogAnalyze();
-        // object.LogParse(logList);
+        System.out.println();
+        object.LogParse(logList);
         System.out.println();
         System.out.println("-----------------------------------------------------------------------------");
         System.out.println();
-        // object.countOccurence(logList);
+        object.countOccurence(logList);
         System.out.println();
         System.out.println("-----------------------------------------------------------------------------");
         System.out.println();
