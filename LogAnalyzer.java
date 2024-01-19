@@ -279,11 +279,11 @@ class LogAnalyzer {
 
         LogAnalyze object = new LogAnalyze();
         System.out.println();
-        // object.LogParse(logList);
+        object.LogParse(logList);
         System.out.println();
         System.out.println("-----------------------------------------------------------------------------");
         System.out.println();
-        // object.countOccurence(logList);
+        object.countOccurence(logList);
         System.out.println();
         System.out.println("-----------------------------------------------------------------------------");
         System.out.println();
